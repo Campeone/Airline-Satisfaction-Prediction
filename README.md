@@ -1,9 +1,11 @@
-# Airline Satisfaction Prediction
+# Airline Satisfaction Prediction 
 
 ## Overview
 This project aims to build a classification model that predicts airline passenger satisfaction based on various features such as flight distance, departure and arrival time convenience, in-flight services, seat comfort, and more. The model helps airlines enhance customer experience by identifying key factors affecting satisfaction.
 
 The analysis leverages machine learning techniques to classify passengers as either satisfied or dissatisfied with their flight experience.
+
+![Airplanes](images/photo_2024-10-10_20-47-04.jpg) 
 
 ## Table of Contents
 1. [Project Structure](#project-structure)
@@ -12,10 +14,9 @@ The analysis leverages machine learning techniques to classify passengers as eit
 4. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 5. [Modeling](#modeling)
 6. [Results](#results)
-7. [Usage](#usage)
-8. [Conclusion](#conclusion)
-9. [Technologies Used](#technologies-used)
-10. [Contact](#contact)
+7. [Conclusion](#conclusion)
+8. [Technologies Used](#technologies-used)
+9. [Contact](#contact)
 
 ## Project Structure
 ```
@@ -99,8 +100,14 @@ Each model was evaluated using metrics such as:
 - **AUC-ROC**: 0.99
 
 Visualization of results:
-- Confusion Matrix
-- ROC Curve
+- **Confusion Matrix**
+
+![Random Forest Confusion Matrix](images/Random%20Forest%20CM.png) 
+  
+- **ROC Curve**
+
+![AUC ROC Curve](images/AUC%20ROC%20Curve.png) 
+
 
 ## Conclusion
 The classification model provides insights into the factors contributing to airline passenger satisfaction. By focusing on key elements such as in-flight service, seat comfort, and delays, airlines can improve customer satisfaction levels and potentially increase customer loyalty.
