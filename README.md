@@ -32,7 +32,7 @@ To run this project, clone the repository and install the required dependencies:
 
 ```bash
 git clone https://github.com/your-username/airline-satisfaction-prediction.git
-cd airline-satisfaction-analysis
+cd airline-satisfaction-prediction
 ```
 
 Create a virtual environment and activate it:
@@ -78,7 +78,7 @@ The following machine learning models were evaluated:
 3. **Gradient Boosting**
 4. **Ada Boost**
 5. **Naive Bayes**
-6. **Decison Tree**
+6. **Decision Tree**
 
 Each model was evaluated using metrics such as:
 - Accuracy
@@ -87,33 +87,20 @@ Each model was evaluated using metrics such as:
 - F1-Score
 - ROC-AUC
 
-**Model Selection**: AUCThe model with the highest performance metrics was selected, and hyperparameter tuning was done using grid search or random search.
+**Model Selection**: AUC-ROC was conducted on the model. Random Forest Classifier demonstrates the best performance among the multiple classifiers as it is the closest to the top left corner. It has an AUC of 0.99
+
 
 ## Results
-- **Best Model**: [e.g., Random Forest Classifier]
-- **Accuracy**: [insert value]
-- **Precision**: [insert value]
-- **Recall**: [insert value]
-- **F1-Score**: [insert value]
-- **AUC-ROC**: [insert value]
+- **Best Model**: Random Forest Classifier
+- **Accuracy**: 0.94
+- **Precision**: 0.96
+- **Recall**: 0.94
+- **F1-Score**: 0.94
+- **AUC-ROC**: 0.99
 
 Visualization of results:
 - Confusion Matrix
 - ROC Curve
-
-## Usage
-To make predictions on new data, use the trained model by running the following command:
-```bash
-python src/predict.py --input data/new_passenger_data.csv
-```
-
-Example:
-```
-| Passenger ID | Age | Flight Distance | Seat Comfort | Predicted Satisfaction |
-|--------------|-----|-----------------|--------------|------------------------|
-| 001          | 35  | 1500            | 4.5          | Satisfied               |
-| 002          | 42  | 900             | 3.0          | Dissatisfied            |
-```
 
 ## Conclusion
 The classification model provides insights into the factors contributing to airline passenger satisfaction. By focusing on key elements such as in-flight service, seat comfort, and delays, airlines can improve customer satisfaction levels and potentially increase customer loyalty.
@@ -121,23 +108,18 @@ The classification model provides insights into the factors contributing to airl
 Future work:
 - Testing with larger datasets
 - Implementing deep learning techniques
-- Including more features (e.g., customer reviews, flight duration)
 
 ## Technologies Used
 - **Programming Language**: Python
 - **Data Analysis**: Pandas, NumPy
 - **Data Visualization**: Matplotlib, Seaborn
 - **Machine Learning**: Scikit-learn, XGBoost
-- **Development Environment**: Jupyter Notebook
+- **Development Environment**: Google Colab
 - **Version Control**: Git
 
 ## Contact
 For more information or collaboration opportunities, feel free to contact me:
 
-- **Name**: [Your Name]
-- **Email**: [Your Email]
-- **Portfolio**: [Link to your portfolio]
-
----
-
-This README provides a clear, structured overview of your project. You can modify it based on the exact content and findings from your notebook. Would you like to add any additional sections or details to the README?
+- **Name**: Ojo Timilehin
+- **Email**: Ojotimilehin01@gmail.com
+- **Portfolio**: https://ojotimilehin01.wixsite.com/ojotimi 
